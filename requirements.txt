@@ -1,0 +1,25 @@
+Nhóm đã sử dụng google colab:
+
+Đầu tiên để chạy được model, nhóm đã kết nối với gg drive: https://drive.google.com/drive/u/0/folders/1GMwqkymMp6ZUC9riluiUrFIHiWcSrAMl
+nơi lưu trữ mã nguồn và các tệp liên quan.
+
+Tiếp theo, nhóm đi cài đặt các thư viện cần dùng, và gọi thư viện có sẵn trên gg colab cho project
+
+Khi import, install các thư viện xong, nhóm đi đến việc load dữ liệu. Nhóm đã lấy dữ liệu từ file
+transformat.json được lưu trong link gg drive.
+
+Sau đó đọc file và cho vào dataframe.
+
+Lúc này chúng ta đã có dữ liệu cần dùng, chúng ta sẽ đi đến việc tiền xử lý dữ liệu. Sau khi tìm 
+hiểu nhiều nguồn, nhóm đã xử lý dữ liệu bằng việc chuẩn hóa dấu câu, xóa láy âm, xóa stopwords, 
+xóa các biểu tượng cảm xúc (emoji), xóa các kí tự (#%@.). Khi xử lí dữ liệu xong, chúng ta sẽ đi 
+vào việc tạo dataloader.
+
+Tạo xong dataloader, nhóm đã xây dựng mô hình fine-tuning phoBERT bằng cách gọi pretrained model 
+phoBERT trên hugging-face và sau đó đóng băng một vài lớp đầu của mô hình, và sau đó thêm 2 lớp
+Linear lên trên để trích xuất đặc trưng, cuối cùng là hàm sigmoid để xuất ra output.
+
+Mô hình đã được xây dựng, chúng ta sẽ đi train chúng, chờ khoảng 10p thì mô hình được train xong, 
+bước tiếp theo, nhóm đi đến việc đưa ra kết quả để submit bằng cách cho dữ liệu từ tập test.csv 
+đi qua mô hình đã được cố định các tham số tốt nhất, đầu ra sẽ lưu kết quả tại link gg drive như 
+đã cập nhật ở trên. 
