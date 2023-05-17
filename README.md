@@ -29,10 +29,4 @@ Sử dụng GOOGLE COLAB:
 # Cài đặt underthesea để chuẩn hóa tiếng Việt:
 !pip install underthesea
 
-# Để không mất thời gian, khi mà mỗi lần chạy thì nó tải lại 1 lần thì nhóm đã lưu các file cài đặt:
-https://drive.google.com/drive/u/0/folders/1GMwqkymMp6ZUC9riluiUrFIHiWcSrAMl
-# Link Github:
-https://github.com/NhatLH/SentimenAnalysClassification
 
-# Link Submit code trên Kaggle:
-https://www.kaggle.com/code/vuminhnhatuet/sentiment-analys (đã chạy thành công)
